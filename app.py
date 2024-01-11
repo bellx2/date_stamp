@@ -20,11 +20,11 @@ if image_file is not None:
         dt = datetime.strptime(
             exif_dict[36867], '%Y:%m:%d %H:%M:%S').date().strftime('%Y %m %d')
     else:
-        dt = ""
+        dt = datetime.now().date().strftime('%Y %m %d')
     photo_date = st.text_input("Date: ", value=dt)
     with tempfile.NamedTemporaryFile(delete=True, suffix=".jpg") as tmp:
         draw = ImageDraw.Draw(img)
-        font = ImageFont.truetype('Arial', 48)
+        font = ImageFont.truetype('./arial.ttf', 48)
         draw.text((img.width-300, img.height-130), photo_date, font=font, fill='#E46C3B',
                   stroke_width=1,
                   stroke_fill='red')
