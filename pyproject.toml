@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "dateStamp"
+version = "0.1.0"
+description = ""
+authors = ["Ryu Tanabe <bellx2@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+streamlit = "^1.28.2"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
