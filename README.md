@@ -2,7 +2,7 @@
 
 写真に日付表示を追加するアプリです。
 
-<https://date_stamper.streamlit.app/>
+<https://date-stamper.streamlit.app/>
 
 ## 使い方
 
