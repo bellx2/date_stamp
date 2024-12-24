@@ -8,7 +8,7 @@
 
 ```bash
 portry install
-streamlit run main.py
+poetry run streamlit run app.py
 ```
 
 ## poetry
