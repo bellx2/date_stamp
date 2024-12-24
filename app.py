@@ -47,7 +47,7 @@ with col1:
                       stroke_fill='red')
             img.save(tmp.name, quality=80)
             with ressult_col:
-                st.image(img, caption="右クリックで画像保存", use_column_width=True)
+                st.image(img, caption="右クリックで画像保存", use_container_width=True)
                 st.download_button(
                     label="JPEGダウンロード",
                     data=open(tmp.name, 'rb').read(),
